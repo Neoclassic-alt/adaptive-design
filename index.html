@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css"> <!-- сброс стилей -->
+    <link rel="stylesheet" href="fonts/opensans.css"> <!-- шрифт Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Adaptive Design</title>
+</head>
+<body>
+    <div class="container">
+        <div class="aside">
+            <div class="aside__button">
+                <img src="icons/union.svg" />
+                <div class="close-icon">
+                    <div class="close-icon__dash close-icon_position_upper"></div>
+                    <div class="close-icon__dash close-icon_position_middle"></div>
+                    <div class="close-icon__dash close-icon_position_below"></div>
+                </div>
+            </div>
+            <div class="aside__outer-icons"> <!-- отображение на планшетах -->
+                <div class="launchpad_logo">
+                    <img src="images/logo_coupon.png" alt="Beco Logo" width="24">
+                </div>
+                <ul class="aside__icons">
+                    <li class="aside__icon"><div class="aside__icon_image_catalog"></div></li>
+                    <li class="aside__icon"><div class="aside__icon_image_health"></div></li>
+                    <li class="aside__icon"><div class="aside__icon_image_beauty"></div></li>
+                    <li class="aside__icon"><div class="aside__icon_image_enjoy"></div></li>
+                    <li class="aside__icon"><div class="aside__icon_image_car"></div></li>
+                </ul>
+            </div>
+            <div class="aside__inner-elements">
+                <a href="#">
+                    <div class="logo aside__logo">
+                        <img src="images/logo_coupon.png" alt="Beco Logo"><p class="logo__text">BECO</p>
+                    </div>
+                </a>
+                <div class="aside__menu">
+                    <ul class="menu aside__list">
+                        <li class="menu__item"><a href="#">Каталог</a></li>
+                        <li class="menu__item"><a href="#">Здоровье</a></li>
+                        <li class="menu__item"><a href="#">Красота</a></li>
+                        <li class="menu__item"><a href="#">Развлечения</a></li>
+                        <li class="menu__item"><a href="#">Авто</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <h1 class="sidebar__title">Развлечения</h1>
+                <div class="sidebar__search sidebar__block_input">
+                    <img src="icons/search.svg" alt="Search Icon" width="20" class="search__icon">
+                    <input type="text" class="search__input" placeholder="Какой магазин вам нужен?" />
+                </div>
+            </div>
+            <div class="content">
+                <div class="offer content__offer offer_image_wine">
+                    <div class="offer__describe">
+                        <p class="offer__title">Пробка на мира</p>
+                        <p class="offer__subtitle">Вечер для двоих</p>
+                    </div>
+                    <div class="offer__advantage">
+                        <p class="offer__count">50%</p> <!-- нужно придумать более подходящее название класса -->
+                        <p class="offer__type">Скидка</p>
+                    </div>
+                </div>
+                <div class="offer content__offer offer_image_beer">
+                    <div class="offer__describe">
+                        <p class="offer__title">Кино и немцы</p>
+                        <p class="offer__subtitle">Бесплатный бокал пива</p>
+                    </div>
+                    <div class="offer__advantage">
+                        <p class="offer__count">Варвар</p> <!-- нужно придумать более подходящее название класса -->
+                        <p class="offer__type">Промокод</p>
+                    </div>
+                </div>
+                <div class="offer content__offer offer_image_cake">
+                    <div class="offer__describe">
+                        <p class="offer__title">Valery Cakes</p>
+                        <p class="offer__subtitle">Торт</p>
+                    </div>
+                    <div class="offer__advantage">
+                        <p class="offer__count">30%</p> <!-- нужно придумать более подходящее название класса -->
+                        <p class="offer__type">Скидка</p>
+                    </div>
+                </div>
+                <div class="offer content__offer offer_image_sushi">
+                    <div class="offer__describe">
+                        <p class="offer__title">Sushi Cell</p>
+                        <p class="offer__subtitle">Набор "Праздник"</p>
+                    </div>
+                    <div class="offer__advantage">
+                        <p class="offer__count">45%</p> <!-- нужно придумать более подходящее название класса -->
+                        <p class="offer__type">Скидка</p>
+                    </div>
+                </div>
+                <div class="offer content__offer offer_image_fruits">
+                    <div class="offer__describe">
+                        <p class="offer__title">Mangosteen</p>
+                        <p class="offer__subtitle">Фрукт в подарок</p>
+                    </div>
+                    <div class="offer__advantage">
+                        <p class="offer__count">J130</p> <!-- нужно придумать более подходящее название класса -->
+                        <p class="offer__type">Купон</p>
+                    </div>
+                </div>
+                <div class="offer content__offer offer_image_wine">
+                    <div class="offer__describe">
+                        <p class="offer__title">Пробка на мира</p>
+                        <p class="offer__subtitle">Вечер для двоих</p>
+                    </div>
+                    <div class="offer__advantage">
+                        <p class="offer__count">50%</p> <!-- нужно придумать более подходящее название класса -->
+                        <p class="offer__type">Скидка</p>
+                    </div>
+                </div>
+                <div class="offer content__offer offer_image_beer">
+                    <div class="offer__describe">
+                        <p class="offer__title">Кино и немцы</p>
+                        <p class="offer__subtitle">Бесплатный бокал пива</p>
+                    </div>
+                    <div class="offer__advantage">
+                        <p class="offer__count">Варвар</p> <!-- нужно придумать более подходящее название класса -->
+                        <p class="offer__type">Промокод</p>
+                    </div>
+                </div>
+                <div class="offer content__offer offer_image_cake">
+                    <div class="offer__describe">
+                        <p class="offer__title">Valery Cakes</p>
+                        <p class="offer__subtitle">Торт</p>
+                    </div>
+                    <div class="offer__advantage">
+                        <p class="offer__count">30%</p> <!-- нужно придумать более подходящее название класса -->
+                        <p class="offer__type">Скидка</p>
+                    </div>
+                </div>
+                <div class="offer content__offer offer_image_beer">
+                    <div class="offer__describe">
+                        <p class="offer__title">Кино и немцы</p>
+                        <p class="offer__subtitle">Бесплатный бокал пива</p>
+                    </div>
+                    <div class="offer__advantage">
+                        <p class="offer__count">Варвар</p> <!-- нужно придумать более подходящее название класса -->
+                        <p class="offer__type">Промокод</p>
+                    </div>
+                </div>
+                <div class="offer content__offer offer_image_cake">
+                    <div class="offer__describe">
+                        <p class="offer__title">Телёнок табака</p>
+                        <p class="offer__subtitle">Стейк "Мачете"</p>
+                    </div>
+                    <div class="offer__advantage">
+                        <p class="offer__count">20%</p> <!-- нужно придумать более подходящее название класса -->
+                        <p class="offer__type">Скидка</p>
+                    </div>
+                </div>
+                <div class="offer content__offer offer_image_stack">
+                    <div class="offer__describe">
+                        <p class="offer__title">Теленок табака</p>
+                        <p class="offer__subtitle">Стейк "Мачете"</p>
+                    </div>
+                    <div class="offer__advantage">
+                        <p class="offer__count">20%</p> <!-- нужно придумать более подходящее название класса -->
+                        <p class="offer__type">Скидка</p>
+                    </div>
+                </div>
+                <div class="offer content__offer offer_image_shaurma">
+                    <div class="offer__describe">
+                        <p class="offer__title">Fine Food</p>
+                        <p class="offer__subtitle">Вторая шаурма в подарок</p>
+                    </div>
+                    <div class="offer__advantage">
+                        <p class="offer__count">Огонь</p> <!-- нужно придумать более подходящее название класса -->
+                        <p class="offer__type">Промокод</p>
+                    </div>
+                </div>
+                <div class="offer content__offer offer_image_ice-cream">
+                    <div class="offer__describe">
+                        <p class="offer__title">aroma cremeria</p>
+                        <p class="offer__subtitle">Джелато “Пармезан”</p>
+                    </div>
+                    <div class="offer__advantage">
+                        <p class="offer__count">20%</p> <!-- нужно придумать более подходящее название класса -->
+                        <p class="offer__type">Скидка</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
