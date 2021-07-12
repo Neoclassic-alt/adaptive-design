@@ -119,6 +119,10 @@ a {
     color: black;
 }
 
+.menu__item a {
+    color: black;
+}
+
 .menu__item a:visited {
     color: black;
 }
