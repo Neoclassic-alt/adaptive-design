@@ -12,8 +12,8 @@ function ready(){
         aside.classList.toggle('aside_open')
         asideIcon.classList.toggle('close-icon_active')
     }
-    if (document.documentElement.clientWidth < 1440){
-        window.onscroll = function(){
+    window.onscroll = function(){
+        if (document.documentElement.clientWidth < 1440){
             if (pageYOffset < 32){
                 searchIcon.style.display = 'block'
                 searchIcon.style.opacity = 1 - (1 / 32) * pageYOffset
@@ -36,8 +36,9 @@ function ready(){
                 content.style.marginTop = '60px'
             }
         }
-    } else {
-        sidebar.style.position = 'sticky'
+        else {
+            sidebar.style.position = 'sticky'
+        }
     }
 
     const asideIcons = document.querySelectorAll('.aside__icon')
